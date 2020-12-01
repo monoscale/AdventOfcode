@@ -19,7 +19,7 @@ namespace Aoc2020.Days {
 
         protected override int SolvePartOne() {
             int x = 0, y = 0;
-            int i = 0, j = 1;
+            int i = 0, j = 0;
             while (x + y != 2020) {
                 x = numbers[i];
                 y = numbers[j % 100];
@@ -31,7 +31,7 @@ namespace Aoc2020.Days {
 
         protected override int SolvePartTwo() {
             int x = 0, y = 0, z = 0;
-            int i = 0, j = 1, k = 2;
+            int i = 0, j = 0, k = 0;
             while (x + y + z != 2020) {
                 x = numbers[i];
                 y = numbers[j % 100];

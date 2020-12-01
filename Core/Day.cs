@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Dynamic;
 using System.IO;
-using System.Reflection;
-using System.Security.Cryptography;
-using System.Timers;
+
 
 namespace Core {
     public abstract class Day<FirstResultType, SecondResultType> {
@@ -17,7 +13,7 @@ namespace Core {
             string day = GetType().Name;
             string filePath =
                 Path.Combine(
-                    Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName,
+                    Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName,
                     "Aoc" + year,
                     "Resources",
                     day + ".txt");

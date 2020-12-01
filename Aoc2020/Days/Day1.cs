@@ -18,38 +18,29 @@ namespace Aoc2020.Days {
         }
 
         protected override int SolvePartOne() {
-            int result = 0;
-            for (int i = 0; i < numbers.Count; i++) {
-                for (int j = i; j < numbers.Count; j++) {
-                    int x = numbers[i];
-                    int y = numbers[j];
-                    if (x + y == 2020) {
-                        Console.WriteLine($"{x} en {y}");
-                        result = x * y;
-
-                    }
-                }
+            int x = 0, y = 0;
+            int i = 0, j = 1;
+            while (x + y != 2020) {
+                x = numbers[i];
+                y = numbers[j % 100];
+                j++;
+                i = j / 100;
             }
-            return result;
+            return x * y;
         }
 
         protected override int SolvePartTwo() {
-            int result = 0;
-            for (int i = 0; i < numbers.Count; i++) {
-                for (int j = i; j < numbers.Count; j++) {
-                    for (int k = j; k < numbers.Count; k++) {
-                        int x = numbers[i];
-                        int y = numbers[j];
-                        int z = numbers[k];
-                        if (x + y + z == 2020) {
-                            Console.WriteLine($"{x} en {y} en {z}");
-                            result = x * y * z;
-
-                        }
-                    }
-                }
+            int x = 0, y = 0, z = 0;
+            int i = 0, j = 1, k = 2;
+            while (x + y + z != 2020) {
+                x = numbers[i];
+                y = numbers[j % 100];
+                z = numbers[k % 100];
+                k++;
+                j = k / 100;
+                i = j / 10000;
             }
-            return result;
+            return x * y * z;
         }
     }
 }

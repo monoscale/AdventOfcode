@@ -4,7 +4,7 @@ using System;
 namespace Aoc2020 {
     class Program {
         static void Main(string[] args) {
-            Day1 day = new Day1();
+            Day2 day = new Day2();
             day.SolveDay();
         }
     }

@@ -3,33 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Aoc2020.Passwords;
 
 namespace Aoc2020.Days {
     public class Day2 : Day<int, int> {
         public override string Title => "Report Repair";
-
-        private class Password {
-            private char requirement;
-            private int min, max;
-            private string text;
-            public Password(string text, char requirement, int min, int max) {
-                this.text = text;
-                this.requirement = requirement;
-                this.min = min;
-                this.max = max;
-            }
-
-            public bool IsValidV1() {
-                int frequency = text.Where(c => c == requirement).Count();
-                return frequency >= min && frequency <= max;
-            }
-
-            public bool IsValidV2() {
-                bool charIsAtFirstPos = text[min - 1] == requirement;
-                bool charIsAtSecondPos = text[max - 1] == requirement;
-                return charIsAtFirstPos ^ charIsAtSecondPos;
-            }
-        }
 
         private List<Password> passwords = new List<Password>();
 
@@ -50,11 +28,13 @@ namespace Aoc2020.Days {
         }
 
         protected override int SolvePartOne() {
-            return passwords.Where(p => p.IsValidV1()).Count();
+            IValidPasswordChecker passwordChecker = new SledRentalPasswordChecker();
+            return passwords.Where(p => passwordChecker.IsValid(p)).Count();
         }
 
         protected override int SolvePartTwo() {
-            return passwords.Where(p => p.IsValidV2()).Count();
+            IValidPasswordChecker passwordChecker = new TobogganPasswordChecker();
+            return passwords.Where(p => passwordChecker.IsValid(p)).Count();
         }
     }
 }

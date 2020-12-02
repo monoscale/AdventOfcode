@@ -7,7 +7,7 @@ using Aoc2020.Passwords;
 
 namespace Aoc2020.Days {
     public class Day2 : Day<int, int> {
-        public override string Title => "Report Repair";
+        public override string Title => "Password Philosophy";
 
         private List<Password> passwords = new List<Password>();
 

@@ -16,17 +16,10 @@
             int currentColumn = 0;
             int treeCount = 0;
             for (int currentRow = 0; currentRow < treeArea.Characters.Count; currentRow += down) {
-                if (treeArea.Characters[currentRow][currentColumn] == '#') {
+                if (treeArea.Characters[currentRow][currentColumn % treeArea.Characters[0].Length] == '#') {
                     treeCount++;
                 }
-                int colDifference = treeArea.Characters[currentRow].Length - currentColumn;
-
-                if (colDifference > right) {
-                    currentColumn += right;
-                } else {
-                    currentColumn = right - colDifference;
-                }
-
+                currentColumn += right;
             }
             return treeCount;
         }

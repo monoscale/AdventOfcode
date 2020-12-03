@@ -9,7 +9,7 @@
 
 
         /// <summary>
-        /// Traverse the area using the slope 3/1 and returns the amount of trees encountered.
+        /// Traverse the area using the slope and returns the amount of trees encountered.
         /// </summary>
         /// <returns></returns>
         public int Traverse(int right, int down) {

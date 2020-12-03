@@ -1,10 +1,10 @@
 ﻿using Aoc2020.Days;
-using System;
+
 
 namespace Aoc2020 {
     class Program {
-        static void Main(string[] args) {
-            Day2 day = new Day2();
+        static void Main() {
+            Day3 day = new Day3();
             day.SolveDay();
         }
     }

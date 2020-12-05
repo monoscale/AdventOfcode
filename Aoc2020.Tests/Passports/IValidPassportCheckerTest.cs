@@ -1,7 +1,7 @@
 ﻿
 using Aoc2020.Passports;
 using NUnit.Framework;
-namespace Aoc2020.Tests {
+namespace Aoc2020.Tests.Passports {
 
     [TestFixture]
     public class IValidPassportCheckerTest {

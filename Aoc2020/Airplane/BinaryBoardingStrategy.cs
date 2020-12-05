@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
 namespace Aoc2020.Airplane {
     public class BinaryBoardingStrategy {
@@ -12,27 +13,16 @@ namespace Aoc2020.Airplane {
         }
 
         private int GetColumn(string input) {
-            return BinarySearch(input, 0, 7, 'L', 'R');
+            return InputToValue(input, 'L', 'R');
         }
 
         private int GetRow(string input) {
-            return BinarySearch(input, 0, 127, 'F', 'B');
+            return InputToValue(input, 'F', 'B');
         }
 
-        private int BinarySearch(string input, int bottom, int top, char bottomChar, char topChar) {
-            int inputIndex = 0;
-            while (bottom != top) {
-                char currentChar = input[inputIndex];
-
-                if (currentChar.Equals(bottomChar)) {
-                    top = top - ((top - bottom) / 2) - 1;
-                } else if (currentChar.Equals(topChar)) {
-                    bottom = bottom + ((top + 1 - bottom) / 2);
-                }
-                inputIndex++;
-            }
-
-            return bottom; // is equal to top
+        private int InputToValue(string input, char bottomChar, char topChar) {
+            input = input.Replace(bottomChar, '0').Replace(topChar, '1');
+            return Convert.ToInt32(input, 2);
         }
 
 

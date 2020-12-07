@@ -1,4 +1,4 @@
-﻿namespace Aoc2020.Passports {
+﻿namespace Aoc2020.Airplane {
     public class Passport {
         public string BirthYear { get; private set; }
         public string IssueYear { get; private set; }

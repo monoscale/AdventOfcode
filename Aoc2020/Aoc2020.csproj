@@ -9,4 +9,9 @@
     <ProjectReference Include="..\core\Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Bags\" />
+    <Folder Include="Passports\" />
+  </ItemGroup>
+
 </Project>

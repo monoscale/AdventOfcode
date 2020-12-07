@@ -1,4 +1,4 @@
-﻿using Aoc2020.Passports;
+﻿using Aoc2020.Airplane;
 using Aoc2020.Trees;
 using Core;
 using System;

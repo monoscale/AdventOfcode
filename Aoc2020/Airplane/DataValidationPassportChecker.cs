@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace Aoc2020.Passports {
+namespace Aoc2020.Airplane {
     public class DataValidationPassportChecker : IValidPassportChecker {
         public bool IsValid(Passport passport) {
             bool isValid = true;

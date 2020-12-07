@@ -1,7 +1,7 @@
 ﻿
-using Aoc2020.Passports;
+using Aoc2020.Airplane;
 using NUnit.Framework;
-namespace Aoc2020.Tests.Passports {
+namespace Aoc2020.Tests.Airplane {
 
     [TestFixture]
     public class IValidPassportCheckerTest {

@@ -24,8 +24,8 @@ C# repository  for Advent Of Code
     <tr><td>04</td><td>✓</td><td></td><td>✓</td><td>✓</td></tr>
     <tr><td>05</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
     <tr><td>06</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
-    <tr><td>07</td><td>✓</td><td></td><td></td><td></td></tr>
-    <tr><td>08</td><td>✓</td><td>✓</td><td></td><td></td></tr>
+    <tr><td>07</td><td>✓</td><td></td><td>✓</td><td></td></tr>
+    <tr><td>08</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
     <tr><td>09</td><td></td><td></td><td></td><td></td></tr>
     <tr><td>10</td><td></td><td></td><td></td><td></td></tr>
     <tr><td>11</td><td></td><td></td><td></td><td></td></tr>

@@ -4,7 +4,7 @@
 namespace Aoc2020 {
     class Program {
         static void Main() {
-            Day8 day = new Day8();
+            Day9 day = new Day9();
             day.SolveDay();
         }
     }

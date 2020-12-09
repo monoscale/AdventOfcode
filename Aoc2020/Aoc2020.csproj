@@ -9,8 +9,4 @@
     <ProjectReference Include="..\core\Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Passports\" />
-  </ItemGroup>
-
 </Project>

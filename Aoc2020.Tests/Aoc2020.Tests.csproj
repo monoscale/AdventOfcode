@@ -16,4 +16,8 @@
     <ProjectReference Include="..\Aoc2020\Aoc2020.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Ferry\" />
+  </ItemGroup>
+
 </Project>

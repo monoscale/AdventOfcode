@@ -17,11 +17,12 @@ namespace Aoc2020.Days {
         }
 
         protected override int SolvePartOne() {
-            throw new NotImplementedException();
+            layout.RunUntilStabilized();
+            return layout.GetOccupiedSeats();
         }
 
         protected override int SolvePartTwo() {
-            throw new NotImplementedException();
+            return 0;
         }
     }
 }

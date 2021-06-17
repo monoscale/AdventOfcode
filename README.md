@@ -1,6 +1,6 @@
 # Advent Of code
-C# repository  for Advent Of Code
 
+Burnout tracker
 
 <table>
   <thead>
